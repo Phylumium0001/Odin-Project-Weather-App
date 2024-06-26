@@ -34,7 +34,6 @@ function getWeatherData(location) {
     fetch(url)
     
     .then((response) => response.json())
-    .catch((err)=>{handleError(err)})
     .then((data)=>{
         console.log(data);
         let obj = processWeatherData(data)
