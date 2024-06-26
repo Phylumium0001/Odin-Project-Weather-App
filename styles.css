@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:url("./todd-trapani-L2dMFs4fdJg-unsplash.jpg");
+    background-size:cover;
+    background-position:center;
+    font-family: 'Montserrat', sans-serif;
+    height:100vh;
+    color:var(--font-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.form-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-row input[type="text"]{
+    /* From https://css.glass */
+    background: rgba(31, 62, 82, 0.79);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(31, 62, 82, 0.23);
+    font-size:2rem;
+    color: white;
+    border:none;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+.form-row input[type="submit"],.changeScale{
+    font-size:1.5rem;
+    color: white;
+    padding: .5rem 1rem;
+    border:none;
+    border-radius: 1rem;
+    color: white;
+    background-color: #273b53;
+}
+
+
+.results{
+    color:white;
+    margin-top: 2rem;
+    padding: 1rem;
+    /* From https://css.glass */
+    background: rgba(31, 62, 82, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(31, 62, 82, 0.23);
+}
+.results_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.temp_desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.more_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.details_row{
+    display: flex;
+    gap: 1rem;
+}
+.more_details_cont{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.weatherIcon{
+    width: 10rem;
+}img{
+    width: 100%;
+}
+.city-name,.time{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.time{
+    font-weight: 400;
+}
+.temperature{
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}.desc{
+    font-size: 2rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.details_row{
+    margin-bottom: 1rem;
+}
+.details_row .label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}.detail{
+    font-size: 1.2rem;
+    font-weight: 00;
+}
+
+.changeScale:hover,#submit:hover{
+    background-color: hsl(213, 36%, 44%);
+}.changeScale:active,#submit:acive{
+    background-color: hsl(213, 36%, 54%);
+    transform: scale(1.02);
+}
+
+.changeScale{
+    margin-top:.5rem;
+}

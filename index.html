@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather Today</title>
+</head>
+<body>
+    <main>
+        <div class="form-row">
+            <input type="text" name="city" id="city">
+            <input type="submit" value="Search" id="submit">
+        </div>
+        
+        <div class="results">
+            <div class="results_header">
+                <h2 class="city-name"></h2>
+            </div>
+
+            <div class="temp_desc">
+                <p class="temperature"></p>
+                <p class="desc"></p>
+            </div>
+            
+            <div class="more_details_cont">
+                <div class="more_details">
+                    <div class="details_row">
+                        <p class="label">Wind Speed</p>
+                        <p class="detail wind_speed"></p>
+                    </div>
+                    <div class="details_row">
+                        <p class="label">Precipitation</p>
+                        <p class="detail precipitation"></p>
+                    </div>
+                    <div class="details_row">
+                        <p class="label">humidity</p>
+                        <p class="detail humidity"></p>
+                    </div>
+                </div>
+                
+                <div class="weatherIcon"><img src="" alt=""></div>
+
+            </div>
+            
+        </div>
+        <button class="changeScale">Celcius / Fahrenheit</button>
+    </main>
+    
+    <footer>Photo by <a href="https://unsplash.com/@ttrapani?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Todd Trapani</a> on <a href="https://unsplash.com/photos/a-large-body-of-water-under-a-cloudy-sky-L2dMFs4fdJg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
