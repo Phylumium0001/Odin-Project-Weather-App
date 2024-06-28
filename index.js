@@ -19,7 +19,7 @@ function processWeatherData(data) {
         precipitation:data.current.precip_mm,
         windSpeed: data.current.wind_kph,
         description: data.current.condition.text,
-        icon : data.current.condition.icon
+        // icon : data.current.condition.icon
         };
         console.log(weatherData);
         return weatherData
