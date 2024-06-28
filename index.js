@@ -33,7 +33,6 @@ function getWeatherData(location) {
     const api_key = "24731f20665148ee977113548242406"
     const url = `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${location}&aqi=no`;
     fetch(url)
-    
     .then((response) => response.json())
     .then((data)=>{
         console.log(data);
@@ -82,8 +81,8 @@ function updateDOMInfo(obj) {
     const precipitation = document.querySelector(".precipitation")
     precipitation.textContent = `${obj.precipitation} mm`
 
-    const icon = document.querySelector(".weatherIcon img")
-    icon.setAttribute("src",obj.icon)
+    // const icon = document.querySelector(".weatherIcon img")
+    // icon.setAttribute("src",obj.icon)
     }
 
 const submitButton = document.getElementById("submit")
