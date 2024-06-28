@@ -30,7 +30,8 @@ function handleError(err){
         alert("Hi")
     }}
 function getWeatherData(location) {
-    const url = `http://api.weatherapi.com/v1/current.json?key=24731f20665148ee977113548242406&q=${location}&aqi=no`;
+    const api_key = "24731f20665148ee977113548242406"
+    const url = `http://api.weatherapi.com/v1/current.json?key=${api_key}&q=${location}&aqi=no`;
     fetch(url)
     
     .then((response) => response.json())
